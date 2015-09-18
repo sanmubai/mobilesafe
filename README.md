@@ -1,2 +1,2 @@
 # mobilesafe
-just for learn android
+my app mobilesafe
