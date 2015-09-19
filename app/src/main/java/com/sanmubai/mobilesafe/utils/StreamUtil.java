@@ -1,4 +1,4 @@
-package com.example.bb.mobilesafe.utils;
+package com.sanmubai.mobilesafe.utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

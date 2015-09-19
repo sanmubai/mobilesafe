@@ -1,4 +1,4 @@
-package com.example.bb.mobilesafe;
+package com.sanmubai.mobilesafe;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

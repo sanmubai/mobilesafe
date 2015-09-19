@@ -1,4 +1,4 @@
-package com.example.bb.mobilesafe.activity;
+package com.sanmubai.mobilesafe.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -15,8 +15,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.bb.mobilesafe.R;
-import com.example.bb.mobilesafe.utils.StreamUtil;
+import com.sanmubai.mobilesafe.R;
+import com.sanmubai.mobilesafe.utils.StreamUtil;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
@@ -58,12 +58,15 @@ public class SplashActivity extends Activity {
                     break;
                 case CODE_URL_ERROR:
                     Toast.makeText(SplashActivity.this, "网络链接错误", Toast.LENGTH_SHORT).show();
+                    enterHome();
                     break;
                 case CODE_READ_ERROR:
                     Toast.makeText(SplashActivity.this, "网络数据读取错误", Toast.LENGTH_SHORT).show();
+                    enterHome();
                     break;
                 case CODE_JSON_ERROR:
                     Toast.makeText(SplashActivity.this, "网络数据解析错误", Toast.LENGTH_SHORT).show();
+                    enterHome();
                     break;
             }
         }

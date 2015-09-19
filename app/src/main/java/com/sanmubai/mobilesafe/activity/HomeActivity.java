@@ -1,15 +1,17 @@
-package com.example.bb.mobilesafe.activity;
+package com.sanmubai.mobilesafe.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.bb.mobilesafe.R;
+import com.sanmubai.mobilesafe.R;
 
 public class HomeActivity extends Activity {
 
@@ -34,6 +36,22 @@ public class HomeActivity extends Activity {
         System.out.println("ok");
 
         gvHome.setAdapter(new Myadapter());
+
+        gvHome.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        //手机防盗
+
+                        break;
+                    case 8:
+                        //设置中心
+                        startActivity(new Intent(HomeActivity.this,SettingActivity.class));
+                        break;
+                }
+            }
+        });
     }
 
     private class Myadapter extends BaseAdapter {
