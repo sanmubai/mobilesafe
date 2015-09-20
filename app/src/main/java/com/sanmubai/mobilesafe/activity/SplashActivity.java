@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -12,11 +13,12 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.sanmubai.mobilesafe.R;
-import com.sanmubai.mobilesafe.utils.StreamUtil;
+import com.sanmubai.mobilesafe.utils.StreamUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
@@ -31,6 +33,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import com.sanmubai.mobilesafe.R;
 
 public class SplashActivity extends Activity {
 
@@ -154,12 +157,24 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
 
         TextView tvVersion = (TextView) findViewById(R.id.tv_version);
+        RelativeLayout sr =(RelativeLayout) findViewById(R.id.splash_root);
 
         tvProgress = (TextView) findViewById(R.id.tv_progress);
 
         tvVersion.setText("版本号：" + getVersionName());
 
-        checkVersion();
+        SharedPreferences sp = getSharedPreferences("settingConfig", MODE_PRIVATE);
+        boolean status = sp.getBoolean("autoUpdate", true);
+        if(status){
+            checkVersion();
+        }else {
+            mhandler.sendEmptyMessageDelayed(CODE_ENTER_HOME,2000);
+        }
+
+        //渐变动画
+        AlphaAnimation aa=new AlphaAnimation(0.3f,1f);
+        aa.setDuration(2000);
+        sr.startAnimation(aa);
 
     }
 
@@ -209,7 +224,7 @@ public class SplashActivity extends Activity {
                     if (conn.getResponseCode() == 200) {
                         InputStream is = conn.getInputStream();
 
-                        String res = StreamUtil.readFromStream(is);
+                        String res = StreamUtils.readFromStream(is);
 
                         JSONObject jo = new JSONObject(res);
 

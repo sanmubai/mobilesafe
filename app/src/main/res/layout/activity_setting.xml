@@ -1,9 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:bb="http://schemas.android.com/apk/res-auto/com.sanmubai.mobilesafe"
+    xmlns:bb="http://schemas.android.com/apk/res/com.sanmubai.mobilesafe"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    >
+    android:orientation="vertical" >
 
     <TextView
         android:id="@+id/tv_settingTitle"
@@ -11,7 +10,13 @@
         android:text="@string/setting_title" />
 
     <com.sanmubai.mobilesafe.view.SettingItemView
+        android:id="@+id/setting_switch"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        bb:settingtitle="自动更新设置"
+        bb:desc_on="自动更新已开启"
+        bb:desc_off="自动更新已关闭"
+        />
+
 
 </LinearLayout>

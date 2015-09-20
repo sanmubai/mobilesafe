@@ -9,9 +9,9 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        android:theme="@style/AppTheme" >
         <activity
-            android:name="com.sanmubai.mobilesafe.activity.SplashActivity"
+            android:name=".activity.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,12 +20,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.sanmubai.mobilesafe.activity.HomeActivity"
+            android:name=".activity.HomeActivity"
             android:label="@string/title_activity_home" >
         </activity>
         <activity
-            android:name="com.sanmubai.mobilesafe.activity.SettingActivity"
+            android:name=".activity.SettingActivity"
             android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".activity.LostFindActivity"
+            android:label="@string/title_activity_lost_find" >
         </activity>
     </application>
 

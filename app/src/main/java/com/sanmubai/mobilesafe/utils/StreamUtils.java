@@ -8,7 +8,7 @@ import java.io.InputStream;
  *
  * Created by bb on 2015/9/17.
  */
-public class StreamUtil {
+public class StreamUtils {
 
     public static String readFromStream(InputStream ins) throws IOException {
         ByteArrayOutputStream out=new ByteArrayOutputStream();

@@ -11,4 +11,14 @@
     <string name="home_item_text">手机防盗</string>
     <string name="title_activity_setting">SettingActivity</string>
     <string name="setting_title">设置中心</string>
+    <string name="et_s_set_pass">请输入密码</string>
+    <string name="et_s_set_confrimpass">请确认密码</string>
+    <string name="et_s_set_pass_title">设置密码</string>
+    <string name="et_s_set_pass_ok">确定</string>
+    <string name="et_s_set_pass_cancel">取消</string>
+    <string name="et_s_input_pass">请输入密码</string>
+    <string name="et_s_input_pass_title">输入密码</string>
+    <string name="et_s_input_pass_ok">确定</string>
+    <string name="et_s_input_pass_cancel">取消</string>
+    <string name="title_activity_lost_find">LostFind</string>
 </resources>
