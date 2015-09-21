@@ -41,6 +41,5 @@
     <string name="setting3_btn">选择联系人</string>
     <string name="setting3_s_btn">请输入或选择联系人</string>
     <string name="setting4_title">4.恭喜你，设置完成</string>
-    <string name="setting4_subtitle"></string>
     <string name="setting4_next">设置完成</string>
 </resources>
