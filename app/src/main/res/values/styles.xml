@@ -14,4 +14,36 @@
         <item name="android:background">@color/green</item>
     </style>
 
+    <style name="SettingTv">
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SettingNext">
+        <item name="android:drawableRight">@mipmap/next</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">next</item>
+        <item name="android:text">@string/setting1_next</item>
+    </style>
+
+    <style name="SettingPrevious">
+        <item name="android:drawableLeft">@mipmap/previous</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">previous</item>
+        <item name="android:text">@string/setting2_previous</item>
+    </style>
+
 </resources>

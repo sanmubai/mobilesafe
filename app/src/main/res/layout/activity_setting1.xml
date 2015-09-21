@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                tools:context="com.sanmubai.mobilesafe.activity.Setting1Activity">
+
+    <TextView
+        style="@style/AppTitle"
+        android:text="@string/setting1_title"/>
+
+    <TextView
+        android:text="@string/setting1_subtitle"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="22sp"
+        android:textColor="@color/dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        style="@style/SettingTv"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="@string/setting1_sim"/>
+
+    <TextView
+        style="@style/SettingTv"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="@string/setting1_gps"/>
+
+    <TextView
+        style="@style/SettingTv"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="@string/setting1_wipedata"/>
+
+    <TextView
+        style="@style/SettingTv"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="@string/setting1_lockscreen"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/setup1"/>
+        <Button
+            style="@style/SettingNext"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
