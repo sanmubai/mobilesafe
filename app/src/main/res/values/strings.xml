@@ -20,4 +20,27 @@
     <string name="et_s_input_pass_ok">确定</string>
     <string name="et_s_input_pass_cancel">取消</string>
     <string name="title_activity_lost_find">LostFind</string>
+    <string name="title_activity_setting1">Setting1Activity</string>
+    <string name="setting1_title">1.欢迎使用手机防盗</string>
+    <string name="setting1_subtitle">您的手机防盗卫士:</string>
+    <string name="setting1_sim">sim卡变更报警</string>
+    <string name="setting1_gps">GPS追踪</string>
+    <string name="setting1_wipedata">远程数据销毁</string>
+    <string name="setting1_lockscreen">远程锁屏</string>
+    <string name="setting1_next">下一步</string>
+    <string name="title_activity_setting2">Setting2Activity</string>
+    <string name="title_activity_setting3">Setting3Activity</string>
+    <string name="title_activity_setting4">Setting4Activity</string>
+    <string name="setting2_title">2.手机卡绑定</string>
+    <string name="setting2_subtitle">通过绑定SIM卡</string>
+    <string name="setting2_desc">下次重启手机如果发现SIM卡变化，就会发送报警短信</string>
+    <string name="setting2_previous">上一步</string>
+    <string name="setting3_title">3.设置安全号码</string>
+    <string name="setting3_subtitle">SIM卡变更后</string>
+    <string name="setting3_desc">报警短信发送到安全号码</string>
+    <string name="setting3_btn">选择联系人</string>
+    <string name="setting3_s_btn">请输入或选择联系人</string>
+    <string name="setting4_title">4.恭喜你，设置完成</string>
+    <string name="setting4_subtitle"></string>
+    <string name="setting4_next">设置完成</string>
 </resources>
