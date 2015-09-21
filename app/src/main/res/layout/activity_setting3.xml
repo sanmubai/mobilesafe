@@ -36,7 +36,6 @@
         android:id="@+id/setting3_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_light_green_selector"
         android:text="@string/setting3_btn"/>
 
     <LinearLayout

@@ -16,8 +16,8 @@ public class Setting2Activity extends Activity {
     }
 
     public void next(View view){
-        System.out.println('222');
-//        startActivity(new Intent(this,Setting3Activity.class));
+        System.out.println("222");
+        startActivity(new Intent(this,Setting3Activity.class));
 //        finish();
     }
 
