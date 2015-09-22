@@ -19,5 +19,6 @@ public class Setting1Activity extends Activity {
 //        Log.d("test","xia yi bu");
         startActivity(new Intent(this,Setting2Activity.class));
         finish();
+        overridePendingTransition(R.anim.trans_next_in,R.anim.trans_next_out);
     }
 }

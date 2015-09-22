@@ -17,10 +17,12 @@ public class Setting3Activity extends Activity {
     public void next(View view){
         startActivity(new Intent(this,Setting4Activity.class));
         finish();
+        overridePendingTransition(R.anim.trans_next_in, R.anim.trans_next_out);
     }
 
     public void previous(View view){
         startActivity(new Intent(this, Setting2Activity.class));
         finish();
+        overridePendingTransition(R.anim.trans_previous_in, R.anim.trans_previous_out);
     }
 }

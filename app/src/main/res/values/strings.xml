@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MobileSafe</string>
+    <string name="app_name">白送</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="s_version">版本号</string>
@@ -42,4 +42,13 @@
     <string name="setting3_s_btn">请输入或选择联系人</string>
     <string name="setting4_title">4.恭喜你，设置完成</string>
     <string name="setting4_next">设置完成</string>
+    <string name="lost_find_title">手机防盗</string>
+    <string name="lost_find_0">安全号码</string>
+    <string name="lost_find_1">防盗保护已开启</string>
+    <string name="lost_find_2">重新进入设置向导</string>
+    <string name="lost_find_3">功能简介</string>
+    <string name="lost_find_4">GPS追踪：#*location*#</string>
+    <string name="lost_find_5">播放报警音乐：#*alarm*#</string>
+    <string name="lost_find_6">远程删除数据：#*wipedata*#</string>
+    <string name="lost_find_7">远程锁屏：#*lockscreen*#</string>
 </resources>
