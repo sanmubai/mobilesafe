@@ -57,6 +57,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:id="@+id/tv_lost_find_reenter"
         android:padding="10dp"
         android:textSize="20sp"
         android:textColor="@color/dark"
@@ -115,7 +116,5 @@
         android:text="@string/lost_find_7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-
 
 </LinearLayout>

@@ -39,7 +39,7 @@
     <string name="setting3_subtitle">SIM卡变更后</string>
     <string name="setting3_desc">报警短信发送到安全号码</string>
     <string name="setting3_btn">选择联系人</string>
-    <string name="setting3_s_btn">请输入或选择联系人</string>
+    <string name="setting3_s_btn">请输入或选择联系人号码</string>
     <string name="setting4_title">4.恭喜你，设置完成</string>
     <string name="setting4_next">设置完成</string>
     <string name="lost_find_title">手机防盗</string>
